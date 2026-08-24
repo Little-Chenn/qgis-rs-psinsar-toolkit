@@ -1,0 +1,10 @@
+{
+  "schema_version": "m7.2.2-template-portability-v1",
+  "source_template_name": "累计形变专题图模板1.0.qpt",
+  "source_sha256": "95BAE4CDCB80B559DFEAEC2E3006914DCEBA16EE7539E55795631F8A83AEB2AB",
+  "bundled_template_name": "cumulative_displacement_template_v1.qpt",
+  "bundled_sha256": "87F3EC719E0AF881E4635359EA9D37F7EE2058C6DD30195DE38B6B034D783C1A",
+  "layout_content_policy": "Preserve page, item IDs, geometry, labels, fonts, map extent, grid, scale bar, north arrow and legend layout.",
+  "portability_change": "Clear two obsolete absolute prototype layer source attributes inside the template map LayerSet. Runtime layers are injected by the plugin.",
+  "source_template_modified": false
+}

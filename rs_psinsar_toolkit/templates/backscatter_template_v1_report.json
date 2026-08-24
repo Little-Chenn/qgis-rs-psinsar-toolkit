@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "milestone": "M5.3",
+  "source_qgz": "后向散射专题图1.0.qgz",
+  "source_qgz_sha256": "A471DA31057C8CC3207B0ABDB0A4C7E3524BB58507A13442D9816769AA095011",
+  "source_qpt": "后向散射专题图1.0.qpt",
+  "source_qpt_sha256": "DD58CD5F5877B86D2504B8A1C90448F5948CF17B0EC75A301B16A83580A3F0CC",
+  "output_qpt": "templates/backscatter_template_v1.qpt",
+  "output_qpt_sha256": "6736EC2877CED8A3DA918FFBBCB8FE95C68D6CE7F49FBE4AFB105629B7641DA0",
+  "required_item_ids": [
+    "title",
+    "main_map",
+    "continuous_legend",
+    "scale_bar",
+    "north_arrow",
+    "legend_heading",
+    "legend_unit",
+    "crs_note",
+    "source_note",
+    "production_note"
+  ],
+  "dynamic_panels": {
+    "crs_note": [
+      "坐标参考系",
+      "空间分辨率",
+      "显示方法"
+    ],
+    "source_note": [
+      "数据来源",
+      "数据拍摄时间"
+    ],
+    "production_note": [
+      "制作时间",
+      "制作单位"
+    ]
+  },
+  "source_files_preserved": true
+}

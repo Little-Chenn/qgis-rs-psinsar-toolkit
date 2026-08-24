@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible plugin problem without attaching sensitive data.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload private imagery, credentials, or full production datasets.
+  - type: input
+    id: qgis_version
+    attributes:
+      label: QGIS version and operating system
+    validations:
+      required: true
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs or report excerpt
+      description: Remove personal paths and data-source identifiers first.
+

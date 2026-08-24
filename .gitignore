@@ -1,0 +1,65 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Build and validation outputs
+build/
+dist/
+release/
+reports/
+validation/
+validation_outputs/
+artifacts/
+*.zip
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Local QGIS profiles and generated projects
+profiles/
+*.qgz
+*.qgs~
+*.aux.xml
+
+# Geospatial source/test data are excluded by default.
+# Add only small, rights-cleared fixtures through an explicit reviewed commit.
+*.tif
+*.tiff
+*.vrt
+*.img
+*.jp2
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.geojson
+*.kml
+*.kmz
+*.safe/
+*.SAFE/
+*.org/
+*.ORG/
+
+# Local tool runtimes and downloaded binaries
+.tooling/
+node_modules/
+.venv/
+venv/

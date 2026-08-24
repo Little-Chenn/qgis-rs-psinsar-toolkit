@@ -1,0 +1,18 @@
+[general]
+name=Remote Sensing and PS-InSAR Processing & Mapping Toolkit
+qgisMinimumVersion=3.44
+description=An integrated QGIS toolkit for GCP-based geometric correction, SAR intensity processing and mapping in dB, and PS-InSAR product mapping and time-series review.
+version=0.3.0-rc1
+author=Yang Chenxi (杨晨曦)
+email=cyang5533@gmail.com
+repository=https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit
+homepage=https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit
+tracker=https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/issues
+about=An integrated QGIS toolkit for external-GCP image-to-map geometric correction and independent RMSE assessment; SAR image mosaicking, mask clipping, display enhancement and SAR intensity mapping in dB; and PS-InSAR vertical displacement rate mapping, batch cumulative displacement mapping and descriptive multi-point time-series review. Each task uses read-only inputs and creates an isolated, non-overwriting output directory.
+category=Raster
+icon=icon.svg
+experimental=True
+deprecated=False
+tags=remote sensing,PS-InSAR,QGIS,PyQGIS,thematic map,SAR,georeferencing,GCP,raster enhancement,pseudocolor
+hasProcessingProvider=False
+server=False

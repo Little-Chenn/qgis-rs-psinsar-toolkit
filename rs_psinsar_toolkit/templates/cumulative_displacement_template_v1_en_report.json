@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "milestone": "0.3.0-dev.8-manual-template-acceptance",
+  "language": "en",
+  "derived_from": "templates/cumulative_displacement_template_v1.qpt",
+  "derived_from_sha256": "DE52227029056EA823F9715DA7277542FEFDCE2C63BFA70CA76E66D280231B6C",
+  "output_qpt": "templates/cumulative_displacement_template_v1_en.qpt",
+  "accepted_source": "User-approved manually edited cumulative_displacement_template.qpt",
+  "accepted_source_sha256": "CD947A50C74133775D3A0E8559F54991A97F1F4352DA0FD960F278C07A868637",
+  "output_qpt_sha256": "CD947A50C74133775D3A0E8559F54991A97F1F4352DA0FD960F278C07A868637",
+  "translation_scope": "User-visible English layout text, corrected mm unit label, user-approved legend placement, and font families; all visible English map text uses Times New Roman. Required item IDs and scientific wording are preserved. Stored numeric values, class thresholds, CRS, and algorithm behavior are unchanged.",
+  "scientific_wording": "Cumulative displacement remains pointwise Dt minus D0 followed by the 50 m grid median, in millimetres; positive values indicate upward motion and negative values indicate downward motion. Stored numeric values are not scaled.",
+  "source_files_preserved": true
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "milestone": "0.3.0-dev.8-manual-template-acceptance",
+  "language": "en",
+  "derived_from": "templates/backscatter_template_v1.qpt",
+  "derived_from_sha256": "6736EC2877CED8A3DA918FFBBCB8FE95C68D6CE7F49FBE4AFB105629B7641DA0",
+  "output_qpt": "templates/backscatter_template_v1_en.qpt",
+  "accepted_source": "Standalone QPT extracted from the user-approved layout 'BC2 M2.2 VV SAR Intensity Map' in the latest manually edited backscatter_template.qgz",
+  "accepted_source_sha256": "2141EBDA82DF60E57B96DF95CC13DE97C596168D1BA9A0CDC911EBD9A122EFC4",
+  "output_qpt_sha256": "40C81CA450952285C7C9E5D0E47631C81DD8AE43C4D1C6292DA5F32031421E6E",
+  "translation_scope": "User-visible English layout text, user-approved layout geometry, font families, and English-only normalization of two non-visible namedStyle metadata values; all visible English map text uses Times New Roman. Required item IDs and scientific wording are preserved. Runtime data bindings, CRS, raster symbology, and export behavior remain builder-controlled.",
+  "scientific_wording": "The display is described as SAR intensity in dB; no Sigma0 or Gamma0 calibration is claimed.",
+  "required_item_ids": [
+    "title",
+    "main_map",
+    "continuous_legend",
+    "scale_bar",
+    "north_arrow",
+    "legend_heading",
+    "legend_unit",
+    "crs_note",
+    "source_note",
+    "production_note"
+  ],
+  "dynamic_panels": {
+    "crs_note": [
+      "Coordinate reference system",
+      "Spatial resolution",
+      "Display method"
+    ],
+    "source_note": [
+      "Data source",
+      "Acquisition date"
+    ],
+    "production_note": [
+      "Produced on",
+      "Produced by"
+    ]
+  },
+  "source_files_preserved": true
+}

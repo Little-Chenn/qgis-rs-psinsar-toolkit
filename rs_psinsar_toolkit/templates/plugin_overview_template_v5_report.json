@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "plugin_version": "0.1.1",
+  "qgis_version": "3.44.11-Solothurn",
+  "source": "confirmed_overview_template_2_0.qpt",
+  "source_sha256": "AD6682264FB1F4A93B7922258EBBED23615B2671963E86914B1C4DC773319042",
+  "output": "templates/plugin_overview_template_v5.qpt",
+  "output_sha256": "A3F588D78D5B995AC25BE238D3BFB6F9F2BA5685F47D90B9632EB1864D1BCD86",
+  "dynamic_items": [
+    "plugin_metadata_left",
+    "plugin_metadata_right"
+  ],
+  "font_stack": [
+    "Times New Roman",
+    "SimSun"
+  ],
+  "font_fallback_applied_at_runtime": true,
+  "html_mode": false,
+  "left_content": [
+    "数据来源",
+    "数据拍摄时间"
+  ],
+  "right_content": [
+    "制作时间",
+    "制作单位"
+  ],
+  "legend_layer_title_hidden_in_source": true,
+  "source_unchanged": true
+}

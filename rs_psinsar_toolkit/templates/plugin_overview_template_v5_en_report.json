@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "milestone": "0.3.0-dev.8-manual-template-acceptance",
+  "language": "en",
+  "derived_from": "templates/plugin_overview_template_v5.qpt",
+  "derived_from_sha256": "A3F588D78D5B995AC25BE238D3BFB6F9F2BA5685F47D90B9632EB1864D1BCD86",
+  "output_qpt": "templates/plugin_overview_template_v5_en.qpt",
+  "accepted_source": "User-approved manually edited plugin_overview_template.qpt",
+  "accepted_source_sha256": "ED7A774CBF19292995947D8FBD855AF712FDF35FBEF5397642C4F0E889C8D070",
+  "output_sha256": "ED7A774CBF19292995947D8FBD855AF712FDF35FBEF5397642C4F0E889C8D070",
+  "output_qpt_sha256": "ED7A774CBF19292995947D8FBD855AF712FDF35FBEF5397642C4F0E889C8D070",
+  "translation_scope": "User-visible English layout text, user-approved layout geometry, corrected mm/year unit label, and font families; all visible English map text uses Times New Roman. Required item IDs and scientific wording are preserved. Stored numeric values, class thresholds, CRS, and algorithm behavior are unchanged.",
+  "scientific_wording": "The map is a descriptive vertical displacement-rate summary in mm/year; positive values indicate upward motion and negative values indicate downward motion.",
+  "required_item_ids": [
+    "m341_title",
+    "m341_overview_map",
+    "m341_velocity_legend",
+    "m341_semantics",
+    "m341_scale_bar",
+    "m341_north_arrow",
+    "plugin_metadata_left",
+    "plugin_metadata_right"
+  ],
+  "source_files_preserved": true
+}
