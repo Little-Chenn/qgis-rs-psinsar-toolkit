@@ -2,24 +2,24 @@
 
 [English](README.md) | **简体中文**
 
-这是 QGIS 双语插件 `rs_psinsar_toolkit` 版本 `0.3.0-rc1` 的独立本地开源准备仓库。
+这是 QGIS 双语插件 `rs_psinsar_toolkit` 版本 `0.3.0-rc1` 的公开源码仓库。
 
 - 作者：**杨晨曦（Yang Chenxi）**
 - 作者单位：**厦门大学联合遥感接收站（Xiamen University Joint Remote
   Sensing Receiving Station）**
 - 公开联系邮箱：**cyang5533@gmail.com**
-- 拟用公开仓库：
+- 源码仓库：
   **<https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit>**
 - 验证环境：**QGIS 3.44.11-Solothurn**
-- 状态：**实验性预发布候选，尚未公开发布**
+- 状态：**实验性预发布候选（`0.3.0-rc1`）**
 
-单位信息用于说明作者隶属关系，本身不表示厦门大学或接收站拥有、赞助、认证或
-官方认可本软件及其科学成果。
+本项目由作者开发与维护，所列单位为作者所属机构。
 
 `0.3.0-rc1` 从本地资格验证通过的 `0.3.0-dev.8-bilingual-rc3` 提升而来。
 dev.8 RC3 已通过全新原生 ZIP 安装、39 项自动测试、英文六模块界面检查、中英文
 六模块轻量回归、双语数值比较、三类专题图回归，以及作者的人工安装和图件验收。
-版本号和许可证提升后仍将在本地重新验证，外部发布前不会连接远程仓库。
+已发布的 `0.3.0-rc1` 安装包验证情况见
+[版本说明](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1)。
 
 ## 仓库结构
 
@@ -55,9 +55,13 @@ dev.8 RC3 已通过全新原生 ZIP 安装、39 项自动测试、英文六模�
 
 ## 发布状态
 
-当前未配置远程 Git 仓库，也未创建提交、推送、GitHub Release、QGIS 插件仓库
-提交或任何公开上传。GitHub 所有者和最终元数据 URL 已确认，可用于本地打包；
-任何外部连接或发布仍需再次取得明确授权。
+本项目源码已在本仓库公开。`0.3.0-rc1` 预发布版本已提供可安装的插件 ZIP 包及
+版本说明，可前往
+[GitHub Releases](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1)
+获取。
+
+当前版本为实验性发布候选，主要用于测试与反馈。用于科研或实际业务前，
+请结合自己的数据和项目要求验证输出结果。
 
 完整使用说明见[插件中文 README](rs_psinsar_toolkit/README_zh-CN.md)、
 [中文安装说明](rs_psinsar_toolkit/INSTALL_zh-CN.md)和

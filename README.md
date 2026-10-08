@@ -2,29 +2,28 @@
 
 **English** | [简体中文](README_zh-CN.md)
 
-This is the independent local open-source preparation repository for the
+This is the public source repository for the
 bilingual QGIS plugin `rs_psinsar_toolkit` version `0.3.0-rc1`.
 
 - Author: **Yang Chenxi (杨晨曦)**
 - Affiliation: **Xiamen University Joint Remote Sensing Receiving Station
   (厦门大学联合遥感接收站)**
 - Public contact: **cyang5533@gmail.com**
-- Planned public repository:
+- Source repository:
   **<https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit>**
 - Supported validation runtime: **QGIS 3.44.11-Solothurn**
-- Status: **experimental pre-release candidate; not yet published**
+- Status: **experimental pre-release candidate (`0.3.0-rc1`)**
 
-The affiliation identifies the author's stated institutional affiliation and
-does not by itself imply institutional ownership, sponsorship, certification,
-or endorsement.
+This project is developed and maintained by the author. The affiliation above
+identifies the institution with which the author is affiliated.
 
 The `0.3.0-rc1` source is promoted from the locally qualified
 `0.3.0-dev.8-bilingual-rc3` candidate. That candidate passed fresh native ZIP
 installation, 39 automated tests, English six-module GUI smoke testing,
 Chinese/English six-module lightweight regression, numeric comparison, three
 thematic-map regression, and the author's manual installation and visual
-acceptance. The version and licensing promotion is being requalified locally
-before any external publication.
+acceptance. For validation details of the published `0.3.0-rc1` package, see the
+[release notes](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1).
 
 ## Repository layout
 
@@ -66,10 +65,13 @@ Copyright (C) 2026 Yang Chenxi (杨晨曦).
 
 ## Publication status
 
-No remote Git repository is configured. No commit, push, GitHub Release, QGIS
-Plugin Repository submission, or public upload has been performed. The GitHub
-owner and final metadata URLs are confirmed for local packaging, but external
-connection and publication still require separate explicit authorization.
+The source code is publicly available in this repository. The `0.3.0-rc1`
+pre-release, including the installable plugin ZIP and release notes, is available
+on [GitHub Releases](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1).
+
+This is an experimental release candidate intended for testing and feedback.
+Users should validate outputs against their own data and project requirements
+before relying on them in research or operational workflows.
 
 For usage documentation, see the
 [plugin README](rs_psinsar_toolkit/README.md),
