@@ -23,9 +23,9 @@ credit, link to CC BY 4.0, and indicate changes.
 
 Copyright (C) 2026 Yang Chenxi (杨晨曦).
 
-Author affiliation: Xiamen University Joint Remote Sensing Receiving Station
-(厦门大学联合遥感接收站). The affiliation is an identification statement and does
-not by itself imply institutional ownership or endorsement. See
+Author affiliation: Ocean University of China (中国海洋大学). Project work was
+carried out at Xiamen University Joint Remote Sensing Receiving Station
+(厦门大学联合遥感接收站). See
 [`AUTHORS.md`](AUTHORS.md).
 
 ## Third-party materials

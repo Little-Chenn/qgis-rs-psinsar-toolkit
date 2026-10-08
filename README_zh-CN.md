@@ -3,9 +3,12 @@
 [English](README.md) | **简体中文**
 
 这是 QGIS 双语插件 `rs_psinsar_toolkit` 版本 `0.3.0-rc1` 的公开源码仓库。
+工具箱集成 GCP 几何校正、SAR 强度处理与制图，以及已有 PS-InSAR 成果的
+专题制图和描述性时序回查。
 
 - 作者：**杨晨曦（Yang Chenxi）**
-- 作者单位：**厦门大学联合遥感接收站（Xiamen University Joint Remote
+- 作者所属机构：**中国海洋大学（Ocean University of China）**
+- 项目开展地点：**厦门大学联合遥感接收站（Xiamen University Joint Remote
   Sensing Receiving Station）**
 - 公开联系邮箱：**cyang5533@gmail.com**
 - 源码仓库：
@@ -13,12 +16,11 @@
 - 验证环境：**QGIS 3.44.11-Solothurn**
 - 状态：**实验性预发布候选（`0.3.0-rc1`）**
 
-本项目由作者开发与维护，所列单位为作者所属机构。
+作者来自中国海洋大学，本项目在厦门大学联合遥感接收站开展。
 
-`0.3.0-rc1` 从本地资格验证通过的 `0.3.0-dev.8-bilingual-rc3` 提升而来。
-dev.8 RC3 已通过全新原生 ZIP 安装、39 项自动测试、英文六模块界面检查、中英文
-六模块轻量回归、双语数值比较、三类专题图回归，以及作者的人工安装和图件验收。
-已发布的 `0.3.0-rc1` 安装包验证情况见
+`0.3.0-rc1` 安装包已在 QGIS 3.44.11 中英文全新配置中完成 ZIP 安装、
+任务中心及六模块界面检查，每种语言下均通过 39 项自动测试，并完成三类专题图的
+数值与模板回归检查。上述验证范围为所用环境和参考数据，详细情况见
 [版本说明](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1)。
 
 ## 仓库结构
@@ -27,8 +29,8 @@ dev.8 RC3 已通过全新原生 ZIP 安装、39 项自动测试、英文六模�
   资源和 QPT 模板；
 - [`tests/`](tests/)：国际化、科学口径、几何校正、SAR 和时序回归测试；
 - [`tools/`](tools/)：带发布门禁的本地打包和仓库审计工具；
-- [`OPEN_SOURCE_AUDIT.md`](OPEN_SOURCE_AUDIT.md)：隐私、依赖、安全、元数据和
-  资源审计；
+- [`OPEN_SOURCE_AUDIT.md`](OPEN_SOURCE_AUDIT.md)：发布准备阶段的隐私、依赖、安全、
+  元数据和资源审计记录；
 - [`LICENSING.md`](LICENSING.md)：软件与文档许可证范围；
 - [`AUTHORS.md`](AUTHORS.md)：作者、单位和公开联系方式；
 - [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md)：从本地候选到公开发布的门禁。
@@ -38,6 +40,8 @@ dev.8 RC3 已通过全新原生 ZIP 安装、39 项自动测试、英文六模�
 - 无完整定标依据时，SAR 成果仅称为强度 dB，不扩大为 Sigma0/Gamma0；
 - 外部 GCP 影像到地图几何校正不等同于 Range-Doppler 地形校正；
 - 垂直形变速率单位为 `mm/year`；
+- PS-InSAR 模块使用预先计算且符合所需结构、单位和垂直形变约定的数据，
+  不执行从 SAR 影像估计形变或将视线向形变转换为垂直形变的计算；
 - 累计形变保持 `D_target - D_initial` 后进行 50 米网格有效差值中位数聚合，
   形变量单位为 `mm`，正值向上、负值向下；
 - 多点时序只用于描述性人工回查，不自动识别异常、划分趋势或推断物理成因；

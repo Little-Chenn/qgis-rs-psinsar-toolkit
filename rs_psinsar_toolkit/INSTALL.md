@@ -4,7 +4,9 @@
 
 ## Installation
 
-Use the locally validated `rs_psinsar_toolkit-0.3.0-rc1.zip`:
+Download `rs_psinsar_toolkit-0.3.0-rc1.zip` from
+[GitHub Releases](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1),
+then install it in QGIS:
 
 1. Open **Plugins → Manage and Install Plugins** in QGIS.
 2. Select **Install from ZIP**.
@@ -14,8 +16,8 @@ Use the locally validated `rs_psinsar_toolkit-0.3.0-rc1.zip`:
 5. Open **Remote Sensing and PS-InSAR Processing & Mapping Toolkit** from the plugin
    menu or toolbar.
 
-Install it in a new or disposable QGIS profile for acceptance testing. Do not replace
-the frozen dev.6 source directory or an operational plugin installation.
+For initial testing, use a separate QGIS profile to keep your existing plugin
+installation and settings available.
 
 ## Language acceptance
 
@@ -61,11 +63,11 @@ without covering controls. The SAR processing page must remain scrollable.
 Every execution must create a new timestamped directory under the selected output root
 and leave the input unchanged. The target validation environment is QGIS `3.44.11`.
 
-## Current gate
+## Validation status
 
 The local RC1 ZIP passed native installation in fresh Chinese and English QGIS 3.44.11
 profiles, seven-window GUI smoke checks, 39/39 installed-copy tests, and the three-map
 numeric/template regression. The earlier bilingual RC3 also passed the user's manual
-six-module and three-map acceptance. No remote repository is configured and no file has
-been uploaded or published; every external publication action requires separate explicit
-authorization.
+six-module and three-map acceptance. These checks cover the tested environment
+and reference data; validate the workflows with your own inputs before using
+the results in research or operational work.

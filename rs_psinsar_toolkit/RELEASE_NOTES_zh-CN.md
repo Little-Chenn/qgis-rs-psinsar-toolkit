@@ -4,9 +4,8 @@
 
 ## 版本定位
 
-`0.3.0-rc1` 在独立开源准备仓库中，将本地资格验证通过的
-`0.3.0-dev.8-bilingual-rc3` 提升为规范的公开候选版本名称。本次操作不覆盖
-`0.2.3` 正式基线、dev.6 中文候选、已验证的 dev.8 源码或 RC3 ZIP。
+`0.3.0-rc1` 是基于 `0.3.0-dev.8-bilingual-rc3` 的双语预发布候选，
+包含中英文界面、文档与专题图模板。
 
 本次提升加入已确认的许可证、版权、作者单位、公开邮箱和候选版本号，不计划修改
 科学算法、数值、机器字段、公式或已人工验收的专题图模板。
@@ -36,10 +35,11 @@
 - 软件、测试、QPT 模板、Qt 翻译、SVG 和运行资源：`GPL-2.0-or-later`；
 - 中英文文档：`CC BY 4.0`；
 - 版权所有 (C) 2026 杨晨曦（Yang Chenxi）；
-- 作者单位：厦门大学联合遥感接收站（Xiamen University Joint Remote
+- 作者所属机构：中国海洋大学（Ocean University of China）；
+- 项目开展地点：厦门大学联合遥感接收站（Xiamen University Joint Remote
   Sensing Receiving Station）。
 
-单位信息仅用于说明作者隶属关系，本身不表示单位拥有或官方认可本软件。
+作者来自中国海洋大学，本项目在厦门大学联合遥感接收站开展。
 
 ## 验证状态
 
@@ -50,5 +50,6 @@
 
 ## 发布状态
 
-正式 `0.3.0-rc1` ZIP 已在本地构建并通过校验，但未上传 GitHub、推送远程分支、
-创建公开 Release 或提交 QGIS 插件仓库。所有外部发布操作仍需另行取得明确授权。
+源码已公开，`0.3.0-rc1` 插件 ZIP 已通过
+[GitHub 预发布版本](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1)
+提供下载。当前为实验性发布候选，主要用于测试与反馈。

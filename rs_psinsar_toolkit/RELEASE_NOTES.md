@@ -4,11 +4,9 @@
 
 ## Candidate scope
 
-`0.3.0-rc1` promotes the locally qualified
-`0.3.0-dev.8-bilingual-rc3` candidate into a public-version naming scheme in an
-independent open-source preparation repository. It does not overwrite the
-`0.2.3` release baseline, the dev.6 Chinese source candidate, the qualified
-dev.8 source, or the RC3 ZIP.
+`0.3.0-rc1` is a bilingual pre-release candidate based on
+`0.3.0-dev.8-bilingual-rc3`. It includes Chinese and English interfaces,
+documentation, and thematic-map templates.
 
 The promotion adds the confirmed licenses, copyright, author affiliation,
 public contact, and release-candidate version. It does not intentionally change
@@ -50,11 +48,12 @@ accepted thematic-map templates.
   resources: `GPL-2.0-or-later`.
 - English and Simplified Chinese documentation: `CC BY 4.0`.
 - Copyright (C) 2026 Yang Chenxi (杨晨曦).
-- Author affiliation: Xiamen University Joint Remote Sensing Receiving Station
+- Author affiliation: Ocean University of China (中国海洋大学).
+- Project work carried out at: Xiamen University Joint Remote Sensing Receiving Station
   (厦门大学联合遥感接收站).
 
-The affiliation is an author-identification statement and does not by itself
-imply institutional ownership or endorsement.
+The author is affiliated with Ocean University of China and carried out this
+project at Xiamen University Joint Remote Sensing Receiving Station.
 
 ## Verification status
 
@@ -68,6 +67,6 @@ regression.
 
 ## Publication status
 
-A formal `0.3.0-rc1` ZIP has been built and validated locally. No GitHub upload,
-remote push, public Release, or QGIS Plugin Repository submission has been
-performed. External publication requires separate explicit authorization.
+The source is public and the `0.3.0-rc1` plugin ZIP is available as a
+[GitHub pre-release](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1).
+This experimental candidate is intended for testing and feedback.

@@ -19,13 +19,13 @@ the license is provided, and changes are indicated.
 
 Suggested attribution:
 
-> Yang Chenxi (杨晨曦), Xiamen University Joint Remote Sensing Receiving
-> Station (厦门大学联合遥感接收站), *Remote Sensing and PS-InSAR Processing &
+> Yang Chenxi (杨晨曦), Ocean University of China (中国海洋大学),
+> *Remote Sensing and PS-InSAR Processing &
 > Mapping Toolkit documentation*, CC BY 4.0.
 
-The affiliation identifies the author's stated institutional affiliation. It
-does not by itself state or imply institutional ownership, sponsorship,
-certification, or endorsement of this software.
+The author is affiliated with Ocean University of China. Project work was
+carried out at Xiamen University Joint Remote Sensing Receiving Station
+(厦门大学联合遥感接收站).
 
 Software source code, QGIS templates, Qt translation catalogs, SVG assets, and
 other runtime resources are not covered by this documentation license. They

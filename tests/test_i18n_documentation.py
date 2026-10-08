@@ -97,12 +97,30 @@ class I18nDocumentationTests(unittest.TestCase):
                     f"Broken local link in {document.name}: {target}",
                 )
 
-    def test_release_notes_preserve_external_publication_gate(self) -> None:
-        notes = (PLUGIN_DIR / "RELEASE_NOTES.md").read_text(encoding="utf-8")
-        normalized = " ".join(notes.split())
-        self.assertIn("built and validated locally", normalized)
-        self.assertIn("No GitHub upload", normalized)
-        self.assertIn("External publication requires separate explicit authorization", normalized)
+    def test_public_docs_link_to_published_candidate(self) -> None:
+        release_url = (
+            "https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/"
+            "releases/tag/v0.3.0-rc1"
+        )
+        obsolete_claims = (
+            "No GitHub upload",
+            "No remote repository is configured",
+            "External publication requires separate explicit authorization",
+            "当前未配置远程仓库",
+            "正在进行本地重新验证",
+            "未上传 GitHub",
+        )
+        for name in (
+            "README.md", "README_zh-CN.md",
+            "INSTALL.md", "INSTALL_zh-CN.md",
+            "RELEASE_NOTES.md", "RELEASE_NOTES_zh-CN.md",
+        ):
+            with self.subTest(document=name):
+                text = (PLUGIN_DIR / name).read_text(encoding="utf-8")
+                normalized = " ".join(text.split())
+                self.assertIn(release_url, normalized)
+                for claim in obsolete_claims:
+                    self.assertNotIn(claim, normalized)
 
 
 if __name__ == "__main__":

@@ -2,14 +2,14 @@
 
 **English** | [简体中文](README_zh-CN.md)
 
-Plugin ID: `rs_psinsar_toolkit`  
-Candidate version: `0.3.0-rc1`  
-Frozen release baseline: `0.2.3`  
-Author: Yang Chenxi (杨晨曦)  
-Affiliation: Xiamen University Joint Remote Sensing Receiving Station
-(厦门大学联合遥感接收站)  
-Contact: cyang5533@gmail.com  
-Status: experimental bilingual pre-release candidate under local requalification
+- Plugin ID: `rs_psinsar_toolkit`
+- Candidate version: `0.3.0-rc1`
+- Author: Yang Chenxi (杨晨曦)
+- Author affiliation: Ocean University of China (中国海洋大学)
+- Project work carried out at: Xiamen University Joint Remote Sensing Receiving
+  Station (厦门大学联合遥感接收站)
+- Contact: cyang5533@gmail.com
+- Status: experimental bilingual pre-release candidate available on GitHub Releases
 
 ## Overview
 
@@ -17,6 +17,10 @@ This QGIS plugin integrates six workflows for external-GCP image-to-map correcti
 SAR intensity processing and mapping in dB, and PS-InSAR product mapping and
 descriptive time-series review. Every run uses read-only inputs and creates an
 isolated output directory. Existing inputs and earlier products are not overwritten.
+
+PS-InSAR modules work with precomputed results in the expected input schema,
+units, and vertical-displacement convention. They do not estimate displacement
+from SAR acquisitions or convert line-of-sight displacement to vertical displacement.
 
 The plugin interface follows the QGIS language. Simplified Chinese is the source and
 fallback language; English is loaded from the compiled Qt translation catalog.
@@ -125,10 +129,11 @@ displacement maps because the initial epoch is used as the reference.
 
 ## Requirements and documentation
 
-The validated baseline and RC3 package passed QGIS `3.44.11` fresh installation,
-39 automated tests, bilingual six-module regression, numeric comparison, thematic-map
-regression, and manual acceptance. The `0.3.0-rc1` version and licensing promotion is
-being requalified locally before publication.
+The `0.3.0-rc1` package passed fresh Chinese and English ZIP installation in
+QGIS `3.44.11`, Task Center and six-module interface checks, 39 automated tests
+in each language, and numeric and template regression checks for three
+thematic-map workflows. These checks cover the tested environment and
+reference data; validate outputs for your own inputs and intended use.
 
 - [Installation and short acceptance](INSTALL.md)
 - [User guide](USER_GUIDE.md)
@@ -142,11 +147,8 @@ licensed under `GPL-2.0-or-later`. English and Simplified Chinese documentation 
 licensed under `CC BY 4.0`. The complete license files are distributed with the
 repository and release package.
 
-Copyright (C) 2026 Yang Chenxi (杨晨曦). The affiliation identifies the author's
-stated institutional affiliation and does not by itself imply institutional ownership
-or endorsement.
+Copyright (C) 2026 Yang Chenxi (杨晨曦).
 
-The planned public repository URL is
-<https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit>. A local formal
-`0.3.0-rc1` ZIP may be generated for requalification, but no GitHub repository
-connection, upload, or public release is authorized by this statement.
+The source repository is <https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit>.
+Download the installable plugin ZIP from
+[GitHub Releases](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1).

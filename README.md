@@ -4,25 +4,28 @@
 
 This is the public source repository for the
 bilingual QGIS plugin `rs_psinsar_toolkit` version `0.3.0-rc1`.
+It supports GCP-based geometric correction, SAR intensity processing and
+mapping, and thematic mapping and descriptive time-series review of existing
+PS-InSAR results.
 
 - Author: **Yang Chenxi (杨晨曦)**
-- Affiliation: **Xiamen University Joint Remote Sensing Receiving Station
-  (厦门大学联合遥感接收站)**
+- Author affiliation: **Ocean University of China (中国海洋大学)**
+- Project work carried out at: **Xiamen University Joint Remote Sensing
+  Receiving Station (厦门大学联合遥感接收站)**
 - Public contact: **cyang5533@gmail.com**
 - Source repository:
   **<https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit>**
-- Supported validation runtime: **QGIS 3.44.11-Solothurn**
+- Tested environment: **QGIS 3.44.11-Solothurn**
 - Status: **experimental pre-release candidate (`0.3.0-rc1`)**
 
-This project is developed and maintained by the author. The affiliation above
-identifies the institution with which the author is affiliated.
+The author is affiliated with Ocean University of China and carried out this
+project at Xiamen University Joint Remote Sensing Receiving Station.
 
-The `0.3.0-rc1` source is promoted from the locally qualified
-`0.3.0-dev.8-bilingual-rc3` candidate. That candidate passed fresh native ZIP
-installation, 39 automated tests, English six-module GUI smoke testing,
-Chinese/English six-module lightweight regression, numeric comparison, three
-thematic-map regression, and the author's manual installation and visual
-acceptance. For validation details of the published `0.3.0-rc1` package, see the
+The `0.3.0-rc1` package was tested in fresh Chinese and English QGIS 3.44.11
+profiles, including ZIP installation, Task Center and six-module interface
+checks, 39 automated tests in each language, and numeric and template regression
+checks for three thematic-map workflows. These checks cover the tested
+environment and reference data. For validation details, see the
 [release notes](https://github.com/Little-Chenn/qgis-rs-psinsar-toolkit/releases/tag/v0.3.0-rc1).
 
 ## Repository layout
@@ -32,8 +35,8 @@ acceptance. For validation details of the published `0.3.0-rc1` package, see the
 - [`tests/`](tests/) — internationalization, scientific-contract, geometry,
   SAR, and time-series regression tests;
 - [`tools/`](tools/) — guarded local packaging and repository-audit tools;
-- [`OPEN_SOURCE_AUDIT.md`](OPEN_SOURCE_AUDIT.md) — current privacy, dependency,
-  security, metadata, and asset review;
+- [`OPEN_SOURCE_AUDIT.md`](OPEN_SOURCE_AUDIT.md) — pre-release privacy, dependency,
+  security, metadata, and asset review record;
 - [`LICENSING.md`](LICENSING.md) — software/documentation license scope;
 - [`AUTHORS.md`](AUTHORS.md) — author, affiliation, and public contact;
 - [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) — local-to-public release gates.
@@ -44,6 +47,10 @@ acceptance. For validation details of the published `0.3.0-rc1` package, see the
   evidence supports a stronger Sigma0/Gamma0 claim.
 - External-GCP image-to-map correction is not Range-Doppler terrain correction.
 - Vertical displacement rate is in `mm/year`.
+- PS-InSAR workflows require precomputed inputs with the expected schema,
+  units, and vertical-displacement convention. They do not estimate
+  displacement from SAR acquisitions or convert line-of-sight displacement
+  to vertical displacement.
 - Cumulative displacement retains `D_target - D_initial`, followed by the
   median of valid differences within each 50 m grid; displacement is in `mm`,
   with positive values upward and negative values downward.
